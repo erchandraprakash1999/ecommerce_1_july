@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   <body>
+   
+    <!-- Menu Bar -->
+    <header class="header  text-left" style="background-color: #D3D3D3;">
+      <div class="container-fluid">
+          <div class="row align-items-center">
+              <div class="col-md-6 text-left mt-2">
+                  <p><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="m222.37 158.46l-47.11-21.11l-.13-.06a16 16 0 0 0-15.17 1.4a8 8 0 0 0-.75.56L134.87 160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16 16 0 0 0 1.32-15.06v-.12L97.54 33.64a16 16 0 0 0-16.62-9.52A56.26 56.26 0 0 0 32 80c0 79.4 64.6 144 144 144a56.26 56.26 0 0 0 55.88-48.92a16 16 0 0 0-9.51-16.62M176 208A128.14 128.14 0 0 1 48 80a40.2 40.2 0 0 1 34.87-40a.6.6 0 0 0 0 .12l21 47l-20.67 24.74a6 6 0 0 0-.57.77a16 16 0 0 0-1 15.7c9.06 18.53 27.73 37.06 46.46 46.11a16 16 0 0 0 15.75-1.14a8 8 0 0 0 .74-.56L168.89 152l47 21.05h.11A40.21 40.21 0 0 1 176 208"/></svg>+000 0000 0000</p>
+              </div>
+              <div class="col-md-6 text-md-right">
+              <div class="dropdown d-inline-block">
+                  <button style="background-color: rgb(211, 211, 211); color: black;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" fill-rule="nonzero" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m1.683 13.95a29 29 0 0 1-3.366 0c.136.786.309 1.494.51 2.098c.252.756.53 1.296.79 1.626c.088.11.223.326.385.326c.145-.013.302-.227.38-.326c.26-.33.539-.87.79-1.626a14.4 14.4 0 0 0 .51-2.098Zm5.83-1.195q-.398.171-.833.315c-.852.284-1.848.512-2.94.67a17 17 0 0 1-.67 2.94q-.144.435-.315.833a8.02 8.02 0 0 0 4.758-4.758m-15.026 0a8.02 8.02 0 0 0 4.758 4.758a11 11 0 0 1-.315-.833a17 17 0 0 1-.67-2.94a17 17 0 0 1-2.94-.67q-.435-.144-.833-.315m5.585-4.683a25.5 25.5 0 0 0 0 3.856c1.282.097 2.574.097 3.856 0a25.5 25.5 0 0 0 0-3.856a25.5 25.5 0 0 0-3.856 0m5.878.245a29 29 0 0 1 0 3.366a14.4 14.4 0 0 0 2.098-.51c.756-.252 1.296-.53 1.626-.79c.11-.087.326-.224.326-.385c-.013-.145-.227-.302-.326-.38c-.33-.26-.87-.539-1.626-.79a14.4 14.4 0 0 0-2.098-.51Zm-7.9 0c-.786.136-1.493.309-2.098.51c-.756.252-1.295.53-1.626.79c-.24.19-.312.333-.323.368c-.045.15.23.323.323.397c.33.26.87.539 1.626.79c.605.202 1.312.375 2.098.51a28 28 0 0 1 0-3.364Zm1.195-5.83a8.02 8.02 0 0 0-4.758 4.758q.398-.171.833-.315a17 17 0 0 1 2.94-.67c.158-1.092.386-2.088.67-2.94q.144-.435.315-.833m5.51 0q.171.399.315.833c.284.852.512 1.848.67 2.94c1.092.158 2.088.386 2.94.67q.435.144.833.315a8.02 8.02 0 0 0-4.758-4.758M12 4c-.139 0-.312.237-.382.326c-.26.33-.539.87-.79 1.626a14.4 14.4 0 0 0-.51 2.098a28 28 0 0 1 3.364 0a14.4 14.4 0 0 0-.51-2.098c-.251-.756-.53-1.295-.79-1.626C12.312 4.236 12.14 4 12 4"/></g></svg>English
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">language 1</a></li>
+                    <li><a class="dropdown-item" href="#">language 2</a></li>
+                    <li><a class="dropdown-item" href="#">language 3</a></li>
+                  </ul>
+                  <div class="d-inline-block ms-3">
+                      <a href="#" style="text-decoration: none; color: black;"> Sing in / Register</a>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </header>
+   
+    <!------------------Navigation Bar------------->
+    <nav class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+            </ul>
+            <!-- Search Bar -->
+            <form class="form-inline my-2 my-lg-0 mr-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Find Cars, Mobile and more..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M10.5 2a8.5 8.5 0 1 0 5.262 15.176l3.652 3.652a1 1 0 0 0 1.414-1.414l-3.652-3.652A8.5 8.5 0 0 0 10.5 2M4 10.5a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0"/></g></svg></button>
+            </form>
+            <button id="extra-button" class="btn btn-primary">Create New Listing</button>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M10 21h4c0 1.1-.9 2-2 2s-2-.9-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2-5.8 5-6.7V4c0-1.1.9-2 2-2s2 .9 2 2v.3c3 .9 5 3.6 5 6.7v6zm-4-8c0-2.8-2.2-5-5-5s-5 2.2-5 5v7h10z"/></svg></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3"/></svg></a>
+              </li>
+          
+            </ul>
+
+        
+    </div>      
+  </div>
+</nav>
+
+<!-- Second Menu Bar -->
+<div class="second-menu-bar">
+  <ul>
+        <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">☰All Categories</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">Category 1</a>
+        <a href="#">Category 2</a>
+        <a href="#">Category 3</a>
+        <a href="#">Category 4</a>
+        <a href="#">Category 5</a>
+        <a href="#">Category 6</a>
+        <a href="#">Category 7</a>
+        <a href="#">Category 8</a>
+      </div>
+    </div>
+    
+      
+      <a href="#mobilephones">Mobile Phones</a>
+      <a href="#cars">Cars</a>
+      <a href="#motorcycles">Motorcycles</a>
+      <a href="#houses">Houses</a>
+      <a href="#TV">TV-Video-Audio</a>
+      <a href="#land-and-plot">Land and plot</a>
+  </ul>
+</div>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+  <!----------------side by side images------->
+  <div class="container-fluid">
+    <div class="column">
+      <img src="image 1.jpg" alt="image" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="image 2.jpg" alt="Forest" style="width:100%">
+    </div>
+    </div>
+    
+    <div id="diva"> All Categories</div>
+    <div id="divb">View all<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32"/></svg></div>
+    
+
+    <section class="avatar-section">
+
+      <div class="avatar-container"><img src="avatar2.jpg" alt="Avatar 1"><p>Shops</p></div>
+      <div class="avatar-container"><img src="home.jpg" alt="Avatar 2"><p>Properties for sale</p></div>
+      <div class="avatar-container"><img src="womenavatar.jpg" alt="Avatar 3"><p>Women's Fashion</p></div>
+      <div class="avatar-container"><img src="avatar1.jpg" alt="Avatar 4"><p>Men's Fashion</p></div>
+      <div class="avatar-container"><img src="car.jpg" alt="Avatar 5"><p>Cars</p></div>
+      <div class="avatar-container"><img src="bikeavatar.webp" alt="Avatar 6"><p>Motorcycles</p></div>
+      <div class="avatar-container"><img src="avatar4.jpg" alt="Avatar 7"><p>Education</p></div>
+      <div class="avatar-container"><img src="hammer.png" alt="Avatar 8"><p>Services</p></div>
+      <div class="avatar-container"><img src="videogames.png" alt="Avatar 9"><p>Videogames</p></div>
+      <div class="avatar-container"><img src="computer.jpg" alt="Avatar 10"><p>Computers and laptops</p></div>
+      <div class="avatar-container"><img src="foodavatar.jpg" alt="Avatar 11"><p>Food</p></div>
+      <div class="avatar-container"><img src="fridge.jpg" alt="Avatar 12"><p>Electronics</p></div>
+      <div class="avatar-container"><img src="fitness.jpg" alt="Avatar 13"><p>Fitness</p></div>
+      <div class="avatar-container"><img src="kids.png" alt="Avatar 14"><p>Kids and Toys</p></div>
+      <div class="avatar-container"><img src="mobile.png" alt="Avatar 15"><p>Mobile and tablets</p></div>
+      <div class="avatar-container"><img src="download.png" alt="Avatar 16"><p>Services</p></div>
+      <div class="avatar-container"><img src="sofa.jpg" alt="Avatar 17"><p>Home and Garden</p></div>
+      <div class="avatar-container"><img src="books.png" alt="Avatar 18"><p>Books and Hobbies</p></div>
+      <div class="avatar-container"><img src="equipments.jpg" alt="Avatar 19"><p>Tools</p></div>
+      <div class="avatar-container"><img src="petavatar.jpg" alt="Avatar 20"><p>Pets</p></div>
+      <div class="avatar-container"><img src="foodavatar.jpg" alt="Avatar 21"><p>Food</p></div>
+
+  </section>
+</div>
+
+<div id="div1"> Properties For Sale</div>
+<div id="div2">View all<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="m221.66 133.66l-72 72a8 8 0 0 1-11.32-11.32L196.69 136H40a8 8 0 0 1 0-16h156.69l-58.35-58.34a8 8 0 0 1 11.32-11.32l72 72a8 8 0 0 1 0 11.32"/></svg></div>
+
+<div class="letterlist">
+  <a href="/list/A"> Appartments For Sale</a>
+  <a href="/list/B">Villa-Palace For Sale</a>
+  <a href="/list/C">Commercial For Sale</a>
+  <a href="/list/D">Whole Building For Sale</a>
+  <a href="/list/E">Foreign real-estate For Sale</a>
+  <a href="/list/F">Town house For Sale</a>
+
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="property.jpg">
+      <img src="property.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">150,000,0 OMR, Commercial</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="property.jpg">
+      <img src="property.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">150,000,0 OMR, Commercial</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="property.jpg">
+      <img src="property.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">150,000,0 OMR, Commercial</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="property.jpg">
+      <img src="property.jpg" width="600" height="400">
+    </a>
+    <div class="desc">150,000,0 OMR, Commercial</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  </div>
+
+
+  <!----------------------Footer-------------------->
+  <footer class="footer">
+    <div class="container text-justify text-md-left">
+        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h5 class="mb-4 font-weight-bold">About Khaleej</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">About Us</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Payment Methods</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Our Products</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Other Countries</a></p>
+        </div>
+        <div class="col-md-2 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h5 class="mb-4 font-weight-bold">Prices and Calculators</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Car Prices and Specifications</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Mobile Prices and Specs</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Tablets Prices and Specs</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Real Estate Prices</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Buy vs. Rent Calculator</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Loan Calculator</a></p>
+        </div>
+        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
+          <h5 class="mb-4 font-weight-bold">Others</h5>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Tags</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Auto Service Centers</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Prayer Times</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Weather</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">CARFAX Report</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Read</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Area Guide</a></p>
+          <p><a href="#" class="text-white" style="text-decoration: none;">Brands</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="container text-center text-md-center" style="background-color: #2d83d3;">
+        <p >All rights reserved of KhaleejSooq.com  | Follow us: <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 128 128"><rect width="118.35" height="118.35" x="4.83" y="4.83" fill="#3d5a98" rx="6.53" ry="6.53"/><path fill="#fff" d="M86.48 123.17V77.34h15.38l2.3-17.86H86.48v-11.4c0-5.17 1.44-8.7 8.85-8.7h9.46v-16A127 127 0 0 0 91 22.7c-13.62 0-23 8.3-23 23.61v13.17H52.62v17.86H68v45.83z"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60"/><rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60"/><path fill="#fff" d="M128.009 28c-27.158 0-30.567.119-41.233.604c-10.646.488-17.913 2.173-24.271 4.646c-6.578 2.554-12.157 5.971-17.715 11.531c-5.563 5.559-8.98 11.138-11.542 17.713c-2.48 6.36-4.167 13.63-4.646 24.271c-.477 10.667-.602 14.077-.602 41.236s.12 30.557.604 41.223c.49 10.646 2.175 17.913 4.646 24.271c2.556 6.578 5.973 12.157 11.533 17.715c5.557 5.563 11.136 8.988 17.709 11.542c6.363 2.473 13.631 4.158 24.275 4.646c10.667.485 14.073.604 41.23.604c27.161 0 30.559-.119 41.225-.604c10.646-.488 17.921-2.173 24.284-4.646c6.575-2.554 12.146-5.979 17.702-11.542c5.563-5.558 8.979-11.137 11.542-17.712c2.458-6.361 4.146-13.63 4.646-24.272c.479-10.666.604-14.066.604-41.225s-.125-30.567-.604-41.234c-.5-10.646-2.188-17.912-4.646-24.27c-2.563-6.578-5.979-12.157-11.542-17.716c-5.562-5.562-11.125-8.979-17.708-11.53c-6.375-2.474-13.646-4.16-24.292-4.647c-10.667-.485-14.063-.604-41.23-.604zm-8.971 18.021c2.663-.004 5.634 0 8.971 0c26.701 0 29.865.096 40.409.575c9.75.446 15.042 2.075 18.567 3.444c4.667 1.812 7.994 3.979 11.492 7.48c3.5 3.5 5.666 6.833 7.483 11.5c1.369 3.52 3 8.812 3.444 18.562c.479 10.542.583 13.708.583 40.396c0 26.688-.104 29.855-.583 40.396c-.446 9.75-2.075 15.042-3.444 18.563c-1.812 4.667-3.983 7.99-7.483 11.488c-3.5 3.5-6.823 5.666-11.492 7.479c-3.521 1.375-8.817 3-18.567 3.446c-10.542.479-13.708.583-40.409.583c-26.702 0-29.867-.104-40.408-.583c-9.75-.45-15.042-2.079-18.57-3.448c-4.666-1.813-8-3.979-11.5-7.479s-5.666-6.825-7.483-11.494c-1.369-3.521-3-8.813-3.444-18.563c-.479-10.542-.575-13.708-.575-40.413c0-26.704.096-29.854.575-40.396c.446-9.75 2.075-15.042 3.444-18.567c1.813-4.667 3.983-8 7.484-11.5c3.5-3.5 6.833-5.667 11.5-7.483c3.525-1.375 8.819-3 18.569-3.448c9.225-.417 12.8-.542 31.437-.563zm62.351 16.604c-6.625 0-12 5.37-12 11.996c0 6.625 5.375 12 12 12s12-5.375 12-12s-5.375-12-12-12zm-53.38 14.021c-28.36 0-51.354 22.994-51.354 51.355c0 28.361 22.994 51.344 51.354 51.344c28.361 0 51.347-22.983 51.347-51.344c0-28.36-22.988-51.355-51.349-51.355zm0 18.021c18.409 0 33.334 14.923 33.334 33.334c0 18.409-14.925 33.334-33.334 33.334c-18.41 0-33.333-14.925-33.333-33.334c0-18.411 14.923-33.334 33.333-33.334"/><defs><radialGradient id="skillIconsInstagram0" cx="0" cy="0" r="1" gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)" gradientUnits="userSpaceOnUse"><stop stop-color="#fd5"/><stop offset=".1" stop-color="#fd5"/><stop offset=".5" stop-color="#ff543e"/><stop offset="1" stop-color="#c837ab"/></radialGradient><radialGradient id="skillIconsInstagram1" cx="0" cy="0" r="1" gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)" gradientUnits="userSpaceOnUse"><stop stop-color="#3771c8"/><stop offset=".128" stop-color="#3771c8"/><stop offset="1" stop-color="#60f" stop-opacity="0"/></radialGradient></defs></g></svg> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14"><g fill="none"><g clip-path="url(#primeTwitter0)"><path fill="currentColor" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="primeTwitter0"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg></p>
+    </div>
+</footer>
+
+
+  
+
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+</body>
+</html>

@@ -1,0 +1,149 @@
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #1a1919;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: left;
+    color: #075ead;
+    font-weight: bold;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  
+  .letterlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+    
+  }
+  
+  .letterlist a {
+      margin-bottom: 25px;
+      margin-top: 5px;
+      color:black;
+      padding: 10px 20px;
+      background: white;
+      font-size:16px;
+      font-weight: lighter;
+      border:solid #999999;
+      border-radius: 5px;
+  }
+  
+  #div1{
+    justify-content: left;
+    color: #075ead;
+    font-weight: bold;
+    width: 33.33%;
+    float: left;
+    font-size: 30px;
+    margin-top: 50px;
+  
+  
+  }
+  #div2{
+    justify-content: right;
+    color: #ffcf3c;
+    font-weight: lighter;
+    width: 15%;
+    float: right;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  
+  .letterlist1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+    
+  }
+  
+  .letterlist1 a {
+      margin-bottom: 25px;
+      margin-top: 5px;
+      color:black;
+      padding: 10px 20px;
+      background: white;
+      font-size:16px;
+      font-weight: lighter;
+      border:solid #999999;
+      border-radius: 5px;
+  }
+
+
+  .top-nav-page1{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .sale-all-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+
+  #diva{
+    justify-content: left;
+    color: #075ead;
+    font-weight: bold;
+    width: 33.33%;
+    float: left;
+    font-size: 30px;
+    margin-top: 50px;
+  
+  
+  }
+  #divb{
+    justify-content: right;
+    color: #ffcf3c;
+    font-weight: lighter;
+    width: 15%;
+    float: right;
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  
