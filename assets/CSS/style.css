@@ -334,10 +334,11 @@ div.desc {
 .foot{
 
   background-color: rgba(138, 204, 235, 0.2);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: 100px;
+  
 }
 
 
